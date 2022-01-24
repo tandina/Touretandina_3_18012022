@@ -1,0 +1,25 @@
+{
+  "name": "p3_toure_tandina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss dist/css/style.css",
+    "watch":"node-sass scss/main.scss dist/css/style.css -w",
+    "compressed":"node-sass scss/main.scss dist/css/style.css -w --output-style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tandina/Touretandina_3_18012022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tandina/Touretandina_3_18012022/issues"
+  },
+  "homepage": "https://github.com/tandina/Touretandina_3_18012022#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.0"
+  }
+}
