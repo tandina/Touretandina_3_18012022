@@ -1,0 +1,27 @@
+// footer
+footer
+{
+    background-color: $bg-tertiary;
+    
+}
+footer
+{
+    color: white;
+}
+.footer-style ul
+{
+    list-style: none;
+}
+.footer-style
+{
+
+    @include flexbox(column,left,baseline,unset);
+        &__li {
+            @include flexbox(row,unset,unset,unset);
+            &--bold {
+                font-style: $bold;
+            }
+    }
+
+
+}

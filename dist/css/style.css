@@ -1,1 +1,129 @@
-body{background-color:#f2ff39}.search{font-size:4rem,#f2ff39}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: unset;
+  background-color: #eaeaea;
+  padding: 10 0 10 0; }
+  .search__text {
+    background-color: #eaeaea;
+    border-style: none; }
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: unset;
+  background-color: #f6f6f6;
+  text-align: center; }
+  .reservation__baseline {
+    font-weight: 300;
+    margin: 7px; }
+
+.operation-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: unset;
+  box-shadow: 0px 10px 15px -13px #000000;
+  border-radius: 30px;
+  background-color: #eaeaea;
+  text-align: center;
+  align-items: center; }
+  .operation-card__icon {
+    margin: 0px 10px 0px 10px; }
+
+.home-restaurant {
+  background-color: #eaeaea; }
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: unset; }
+  .restaurant-card__picture {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    object-position: 100% 60%; }
+  .restaurant-card__new {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #1b6150;
+    font-size: 0.9em;
+    font-weight: 500px;
+    height: 30px;
+    width: 80px;
+    right: 90px;
+    box-shadow: 0px 10px 15px -13px #000000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: unset; }
+
+.restaurant-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  flex-wrap: unset; }
+  .restaurant-card__details {
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: unset;
+    background-color: white; }
+
+header {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: unset;
+  padding: 5px 0px 15px 0px;
+  box-shadow: 0px 10px 15px -13px #000000; }
+
+header img {
+  height: 25px; }
+
+footer {
+  background-color: #353535; }
+
+footer {
+  color: white; }
+
+.footer-style ul {
+  list-style: none; }
+
+.footer-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  flex-wrap: unset; }
+  .footer-style__li {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
+    flex-wrap: unset; }
+    .footer-style__li--bold {
+      font-style: bold; }
+
+.page-link {
+  text-decoration: none; }
+
+body {
+  font-family: 'roboto', sans-serif; }
+
+h4 {
+  font-family: 'Shrikhand', cursive; }
