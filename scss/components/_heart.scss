@@ -1,0 +1,22 @@
+.heart .fas
+{
+    color: transparent;
+    background-image: linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
+}
+.heart:hover .fas
+{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.heart i
+{
+    font-size: 1.5rem; 
+    position: absolute;
+    margin-right: 60px;
+    
+}
