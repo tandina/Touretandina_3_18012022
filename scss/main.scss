@@ -1,5 +1,15 @@
-@import "./utils/variables";
+@import "./utils/_variables";
+@import "./utils/mixins";
+@import "./utils/_animation";
 
-@import "./pages/index";
+@import "./pages/_index";
+@import "./pages/_menus";
 
-@import "./layouts/header";
+@import "./layouts/_header";
+@import "./layouts/_footer";
+
+@import "./base/_typographie";
+@import "./base/_base";
+
+@import "./components/_heart";
+@import "./components/load-screen"

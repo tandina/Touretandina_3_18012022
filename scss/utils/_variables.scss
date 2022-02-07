@@ -2,6 +2,15 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$grey:#eaeaea;
-$light-grey:#f6f6f6;
-$black-grey:#353535;
+
+$bg-primary:#eaeaea;
+$bg-secondary:#f6f6f6;
+$bg-tertiary:#333;
+
+$padding-light:10 0 10 0;
+$padding-heavy:40px 0px 40px 0px;
+$padding-header:20px 0px 15px 0px;
+
+$bold:bold;
+
+$breakpoints: (tablet:760px, desktop:1200px);

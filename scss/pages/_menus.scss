@@ -1,0 +1,168 @@
+.page{
+    @include tablet {
+    width: 100%;
+    }
+}
+.menus-pic
+{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.menu
+{
+    background-color: $bg-primary;
+    border-radius: 35px 35px 0 0;
+    margin-top: -50px;
+    position:relative;
+    &__btn {
+        @include flexbox(unset,center,unset,unset);
+    }
+    
+}
+
+
+.menu-heading 
+{
+    @include flexbox(row,space-between,baseline,nowrap);
+    @include tablet {
+        @include flexbox(row,space-evenly,baseline,nowrap);
+    }
+
+    &__title {
+    font-family: 'Shrikhand', cursive;
+        font-size: 1.6em;
+    }
+    .heart {
+        padding-bottom: 20px;
+    }
+    h1
+    {
+        margin: 30px 20px 20px 20px;
+    }  
+    .heart
+    {
+        margin-right: 60px;
+    }
+}
+.btn-buy{  
+    
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #EF74DA 0%, #9F5ADC 61%, #9F5ADC 100%);
+    @include border-shadow;
+    &:hover{ 
+        background: lighten($color-primary, 15%);
+        cursor: pointer;
+    }
+    padding: 15px 50px 15px 50px;
+    width: fit-content;
+    
+    margin: 10px 0px 50px 0px;
+
+} 
+.menu-anim
+{
+    @for $i from 1 through 3 {&:nth-child(#{$i}) {animation-delay:200ms * $i;}
+}
+animation: meal 800Ms;
+animation-fill-mode: both;
+overflow: hidden;
+}
+.menu-meal
+{
+    @include flexbox(row,flex-start,flex-end,nowrap);
+    @include box-shadow;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px 0;
+    width: 345px;
+    &:active .menu-meal__validate, &:hover .menu-meal__validate{
+        width: 60px;
+        transform: translateX(0);
+        cursor: pointer;
+    }
+    &:active .menu-meal__icon,  &:hover .menu-meal__icon {
+        transform: rotate(1turn);
+        opacity:1;
+        
+    }
+    &__text {
+        margin: 10px 12px;
+        overflow: hidden;
+        flex: 1;
+        @include flexbox(column,unset,unset,unset);
+        
+    }
+    &__title, &__subtitle {
+        margin:0px 0px 3px 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__subtitle {
+        font-size: .9em;
+        }
+    &__validate {
+        @include flexbox(row,center,center,unset);
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        height: 62px;
+        // width: 60px;
+        width: 0;
+        // padding: 25px 0px 21px 0px;
+        transition: all 400ms ease-in-out;
+        transform: translateX(100%);
+        
+       
+    }
+    &__icon {
+        color: white;
+        font-size: 20px;
+        transition: all 400ms 100ms ease-in-out;
+        opacity: 0;
+    }
+    &__price {
+        font-weight:700 ;
+        margin: 15px 20px 15px 0;
+        
+    }
+    &__title {
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
+.menu-sub-price
+{
+    @include flexbox(row,space-between,baseline,nowrap);
+    margin-top: -14px;
+    height: 45px;
+    position: relative;
+}
+.list
+{
+    @include tablet {
+        @include flexbox(row,space-around,unset,wrap);
+    }
+    padding: 15px;
+    &__heading {
+        @include flexbox(column,left,unset,unset)
+    }
+    &__texte {
+        text-transform: uppercase;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        
+        }
+    &__divider {
+        background-color: $color-tertiary;
+        display: block;
+        width: 50px;
+        height: 3px;
+        }
+    .list-meal
+    {
+        margin: 15px 0;
+    }
+}

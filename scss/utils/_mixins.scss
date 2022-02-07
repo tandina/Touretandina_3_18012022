@@ -15,3 +15,40 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+@mixin box-shadow {
+    box-shadow: 0px 4px 7px 1px rgba(0,0,0,.1);
+}
+@mixin adjustement {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+@mixin hover-light {
+    &:hover{ 
+    background-color: lighten($color-primary, 35%);
+    cursor: pointer;
+    
+    }
+}
+
+
+@mixin tablet { 
+    @media all and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+@mixin padding-desktop($padding: $padding-desktop){ 
+    padding-left: $padding;
+    padding-right: $padding;
+}
+

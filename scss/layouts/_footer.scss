@@ -2,26 +2,28 @@
 footer
 {
     background-color: $bg-tertiary;
-    
+    padding: 25px 25px 40px;
 }
-footer
-{
-    color: white;
-}
-.footer-style ul
-{
-    list-style: none;
-}
+
 .footer-style
 {
-
     @include flexbox(column,left,baseline,unset);
-        &__li {
-            @include flexbox(row,unset,unset,unset);
-            &--bold {
-                font-style: $bold;
-            }
+    @include tablet {
+        @include flexbox(row,space-between,baseline,unset);
     }
+    .fas {
+        margin-right: 10px;
+    }
+    padding: 0px;
+        &__li {
+            color: white;
+            @include flexbox(row,unset,unset,unset);
+            padding-bottom: 10px;
+           
+    }
+}
 
-
+.footer-link
+{
+    text-decoration: none;
 }

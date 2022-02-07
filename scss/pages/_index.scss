@@ -1,0 +1,198 @@
+body
+{
+    @include adjustement;
+}
+// search section
+.search
+{
+    @include flexbox(row,center,unset,unset);
+    background-color: $bg-primary;
+    box-shadow: inset 0px 16px 13px -20px #818181;
+    padding: 15px 0px 15px 80px;
+    &__text {
+        background-color: $bg-primary;
+        border-style: none;
+        color: $bg-tertiary;
+        font-size:1em;
+        font-weight: 700;
+        
+    }
+    &__icon {
+        margin-right: 15px;
+        font-weight: 700;
+        color: $bg-tertiary;
+    }
+   
+}
+// Réservation Section
+.reservation
+{
+    @include flexbox(column,center,center,unset);
+    background-color: $bg-secondary;
+    text-align: center;
+    &__baseline {
+        font-weight: 300;
+        margin: 7px;
+    }       
+}
+.btn{  
+    
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #EF74DA 0%, #9F5ADC 61%, #9F5ADC 100%);
+    @include border-shadow;
+    &:hover{ 
+        background: lighten($color-primary, 15%);
+        cursor: pointer;
+    }
+    padding: 15px;
+    
+    margin: 10px 0px 50px 0px;
+
+}
+
+// Opération section
+.list-card
+{
+    @include flexbox(column,center,unset,unset);
+    padding: 10px 20px 30px 30px;
+    @include tablet {
+        @include flexbox(row,space-around,unset,wrap);
+    }
+
+}
+
+.operation-card
+{
+    @include flexbox(row,initial,unset,unset);
+    @include tablet {
+        width: 40%;
+        position: relative;
+        min-width: 320px;
+    }
+    @include desktop {
+        width: 30%;
+    }
+    border-radius: 20px;
+    @include box-shadow;
+   
+    &:hover{ 
+        background-color: lighten($color-primary, 35%);
+        box-shadow: 0px 20px 15px -22px #000000;
+        cursor: pointer;
+        .operation-card__icon {
+            color: $color-primary;
+        }
+    }
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 90%;
+    background-color: $bg-primary;
+    text-align: center;
+    align-items: center;
+   
+    &__icon {
+        margin:0px 15px 0px 30px;
+        color: $bg-tertiary;
+        &:hover {
+            color: darken($color-primary, 20%);
+            
+        }
+    }
+    &__text {
+        font-size: 0.9em;
+        font-weight: 700;
+
+    }
+    &__num {
+        background-color: $color-primary;
+        color: white;
+        border-radius: 40px;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        line-height: 25px;
+        position: absolute;
+        left: 23px;
+        @include tablet {
+            left: -13px;;
+        }
+    }
+}
+
+// Restaurant Section
+.list-restaurant
+{
+    @include flexbox(row,space-around,unset,unset);
+    flex-wrap:wrap;
+    
+}
+.home-restaurant
+{
+    background-color: $bg-primary;
+}
+.restaurant-card
+{
+    @include flexbox(column,center,unset,unset);
+    position:relative;
+    min-width: 90%;
+    @include tablet {
+        @include flexbox(column,space-around,unset,wrap);
+        min-width: 320px;
+    }
+
+    
+    
+    
+    &__picture {
+        
+        height:160px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        object-position: 100% 60%;
+    }
+    &__details {
+        border-radius:0px 0px 15px 15px;
+        height: 80px;
+        @include box-shadow;
+        @include flexbox(row,space-between,baseline,unset);
+        background-color: white;  
+        margin-top: -2px;
+        margin-bottom: 20px;
+        }
+        &--text {
+            position: relative;
+            margin-right: 0px;
+            
+        }
+    &__new {
+        position: absolute;
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 50%);
+        font-size: 0.9em;
+        font-weight: 500;
+        height: 30px;
+        width: 80px;
+        right: 10px;
+        top: 10px;
+        @include border-new;
+        @include flexbox(row,center,center,unset)
+    }
+}
+.restaurant-card h3
+{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px 0px 3px 10px;
+}
+.restaurant-card p
+{
+    margin: 10px 0px 3px 10px;
+}
+.heading
+{
+    padding: 20px 0px 0px 20px;
+}
+

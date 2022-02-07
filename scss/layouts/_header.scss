@@ -1,0 +1,24 @@
+header
+{
+    @include flexbox(unset,center,unset,unset);
+    padding: $padding-header;
+     
+    
+}
+header img
+{
+    height: 25px;
+    
+}
+
+.header__icon
+{
+    color: $bg-tertiary;
+    position:absolute;
+    left:23px;
+    &:hover {
+        color:$color-primary;
+        scale: 1.5;
+    }
+    
+}
