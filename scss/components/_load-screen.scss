@@ -1,12 +1,16 @@
 .loader
 {
-    
+    @include tablet {
+        @include flexbox(row,center,baseline,nowrap);
+        min-width: 320px;
+    }
    position: fixed;
    background-color: white;
    height: 100vh;
    inset: 0;
    z-index: 1;
-   animation: end-anim 1s 2S forwards;
+   animation: end-anim 1s 2S forwards ;
+//    animation: fade-out 3s 1s forwards ;
    transform-origin: ease;
    &__hat {
        color:$bg-tertiary;
@@ -14,15 +18,21 @@
    
 
 }
+
+
 .logo-load
 {
-    padding: 0% 30% 0% 23%;
+    padding-top: 3%;
 }
-
+.toque
+{
+    @include flexbox(column,flex-start,center,nowrap);
+   position: fixed;
+}
 .chef
 {
     width: 64%;
-    padding: 23% 30% 0% 18%;
+    padding-top: 20%;
 }
 
 .ball
@@ -32,7 +42,7 @@
     width: 20px;
     border-radius: 50%;
     position: relative;
-    top:5px;
+    top: 372px;
     left: 86px;
     animation: bounce 0.9s infinite;
 
@@ -44,7 +54,7 @@
     width: 20px;
     border-radius: 50%;
     position: relative;
-    top:-15px;
+    top:352px;
     left: 170px;
     animation: bounce2 0.9s infinite;
 
@@ -56,8 +66,8 @@
     width: 20px;
     border-radius: 50%;
     position: relative;
-    top: -36px;
-    left: 252px;
+    top: 333px;
+    left: 265px;
     animation: bounce 0.9s infinite;
 
 }
@@ -72,8 +82,8 @@
     width: 25px;
     border-radius: 50%;
     position: relative;
-    top: 58px;
-    left: 80px;
+    top: 420px;
+    left: 86px;
     z-index: -1;
     animation: shrink 0.9s infinite;
 }
@@ -83,8 +93,8 @@ height: 10px;
 width: 25px;
 border-radius: 50%;
 position: relative;
-top: 36px;
-left: 168px;
+top: 413px;
+left: 170px;
 z-index: -1;
 animation: shrink 0.9s infinite;
 }
@@ -94,8 +104,39 @@ height: 10px;
 width: 25px;
 border-radius: 50%;
 position: relative;
-top: 13px;
-left: 245px;
+top: 398px;
+left: 261px;
 z-index: -1;
 animation: shrink 0.9s infinite;
+}
+@include tablet {
+    .ball{
+    top:494px;
+    left: -88px;
+    }
+    .ball2
+    {
+     top:482px;
+     left: -5px;   
+    }
+    .ball3
+    {
+    top:469px;
+    left: 82px;
+    }
+    .shadow
+    {
+        top: 531px;
+        left:-89px;
+    }
+    .shadow2
+    {
+        top: 521px;
+        left:-3px;
+    }
+    .shadow3
+    {
+        top: 510px;
+        left:81px;
+    }
 }
