@@ -148,10 +148,14 @@ body
     
     &__picture {
         
-        height:160px;
-        border-radius: 15px 15px 0px 0px;
+        height:175px;
+        border-radius: 20px 20px 0px 0px;
         object-fit: cover;
-        object-position: 100% 60%;
+        object-position: 100% 100%;
+    }
+    &__fix {
+        
+        object-position: 100% 60% !important;
     }
     &__details {
         border-radius:0px 0px 15px 15px;

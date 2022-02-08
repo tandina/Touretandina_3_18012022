@@ -198,10 +198,12 @@ body {
       flex-wrap: wrap;
       min-width: 320px; } }
   .restaurant-card__picture {
-    height: 160px;
-    border-radius: 15px 15px 0px 0px;
+    height: 175px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    object-position: 100% 60%; }
+    object-position: 100% 100%; }
+  .restaurant-card__fix {
+    object-position: 100% 60% !important; }
   .restaurant-card__details {
     border-radius: 0px 0px 15px 15px;
     height: 80px;
